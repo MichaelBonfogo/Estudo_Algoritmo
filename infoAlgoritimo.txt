@@ -1,20 +1,23 @@
 Estudo sobre Algotimos
 
 Linguagem Natural vs Artificially
+---------------------------------------------------
 
 Visão Geral de Algoritimo
 Visão Geral de Estrutura de Dados
-
+---------------------------------------------------
 Código Fonte
 
 Criando Projeto
-
+---------------------------------------------------
 Coméntario de Código
 Sentença de Códigos
 Bloco de Códigos
-
+---------------------------------------------------
 Operadores de
 
 Tipagem Fraca vs Tipagem Forte
 
 Visão Geral das Estruturas de Controle
+---------------------------------------------------
+
