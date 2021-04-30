@@ -82,3 +82,102 @@ A tabela abaixo apresenta os operadores lógicos do Java:
 -------------------------------------------------------------------------------
 -------------------------------------------------------------------------------
 
+Estruturas de Controle
+
+Estruturas de seleção
+Estruturas de repetição
+
+-------------------------------------------------------------------------------
+
+if:
+
+inteiro x = 4
+
+se (x == 4) {
+    escreva("x é igual a 4")
+}
+
+
+-------------------------------------------------------------------------------
+
+
+if / else:
+
+inteiro x = 4
+
+se (x == 4) {
+    escreva("x é igual a 4")
+}
+senao {
+    escreva("x é diferente de 4")
+}
+
+-------------------------------------------------------------------------------
+
+for:
+
+
+
+
+
+-------------------------------------------------------------------------------
+
+while:
+
+inteiro numero = 1
+inteiro cuboNumero
+
+enquanto (numero != 0) {
+    escreva("Digite um número inteiro\n")
+    leia(numero)
+    cuboNumero = numero * numero * numero
+    escreva("O cubo do número é ", cuboNumero, "\n")
+}
+
+
+
+
+-------------------------------------------------------------------------------
+
+Do-while:
+
+inteiro numero
+inteiro cuboNumero
+
+faca {
+    escreva("Digite um número inteiro\n")
+    leia(numero)
+    cuboNumero = numero * numero * numero
+    escreva("O cubo do número é ", cuboNumero, "\n")
+} enquanto (numero != 0)
+
+-------------------------------------------------------------------------------
+
+switch:
+
+inteiro titulos
+leia(titulos)
+
+escolha (titulos) {
+    caso 0:
+        escreva("Não ganhou nada")
+        pare
+    caso 1:
+        escreva("Campeão")
+        pare
+    caso 2:
+        escreva("Bicampeão")
+        pare
+    caso contrario:
+        escreva("Mito")
+}
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
