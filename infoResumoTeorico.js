@@ -250,6 +250,88 @@ console.log(saudacao);
 
 // 128. Array Teoria
 
+//              0    1   2    3    4    5
+const notas = [7.8, 6.7, 10, 9.5, 7.8, 5.8];
+
+console.log(notas);
+console.log(notas[3]);
+console.log(notas[5]);
+console.log(notas[10]);
+
+notas[4] = 8.7;
+
+console.log(notas);
+// ----------------------------------
+const nomes = [];
+
+nomes[0] = "Pedro";
+nomes[1] = "Ana";
+nomes[2] = "Bia";
+nomes[3] = "Gui";
+nomes[4] = "Rebeca";
+nomes[9] = "Tiago";
+
+console.log(nomes);
+// ----------------------------------
+console.log(typeof console);
+console.log(typeof console.log);
+
+const numeros = [1, 2, 3];
+
+console.log(typeof numeros);
+
+numeros.push(4);
+numeros.push(5);
+numeros.push(10.98);
+
+console.log(numeros);
+console.log(numeros.length);
+
+// ----------------------------------
+
+// 136. Métodos do Array #01
+
+const numeros = [1, 2, 3, 4, 5, 8];
+
+numeros[0] = 100;
+numeros.push(6);
+
+console.log(numeros.indexOf(4));
+console.log(numeros.indexOf(4, 4));
+console.log(numeros.includes(10));
+console.log(numeros.includes(6));
+console.log(numeros.join(' - '));
+console.log(numeros);
+
+const numeros2 = numeros.concat(7, 8, 9);
+console.log(numeros2);
+// ----------------------------------
+const numeros = [1, 2, 3, 4, 5, 8];
+
+numeros.splice(1, 2);
+console.log(numeros);
+
+console.log(numeros.pop());
+console.log(numeros.pop());
+console.log(numeros);
+// ----------------------------------
+const numeros = [10, 20, 30, 40];
+
+function praCadaElemento(elemento, indice, array) {
+    console.log(elemento, indice, array);
+}
+
+numeros.forEach(praCadaElemento);
+
+numeros.forEach(function (el) {
+    console.log(el);
+});
+
+numeros.forEach(function (_, i) {
+    console.log(i);
+});
+
+
 /*------------------------------------------------------------------------------*/
 
 // Seção 8: Objetos
@@ -418,4 +500,6 @@ Shift + PgUp / PgDn Rola a página para cima / baixo
 Ctrl + Home / End Rola para cima / baixo
 */
 
+/*------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------*/
 /*------------------------------------------------------------------------------*/
