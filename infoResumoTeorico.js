@@ -3,8 +3,6 @@
  * Base para linguagem JavaScript.
  * Atalhos para o VsCode.
  * 
- * 
- * 
  */
 
 
@@ -13,7 +11,51 @@
 /*------------------------------------------------------------------------------*/
 
 // 21. Sentença de Código #01
-// 24. Bloco de Código
+
+console.log("Boa noite!");
+
+console.log('Passo #03');
+console.log('Passo #01');
+console.log('Passo #02');
+
+
+// 24. Bloco de Código { }
+
+{ }
+
+{
+    console.log("Passo #01");
+    console.log("Passo #02");
+    console.log("Passo #03");
+}
+
+{
+    console.log("Passo #04");
+    console.log("Passo #05");
+}
+
+{
+    {
+        {
+            {
+               ;
+               ;
+               ; 
+            }
+        }
+    }
+}
+
+// 23. Comentários de Código
+
+  // 
+
+  /*
+  * Esse é um
+  * comentário
+  * de múltiplas
+  * linhas!
+  */
 
 /*------------------------------------------------------------------------------*/
 
@@ -23,17 +65,150 @@
 
 // Seção 4: Operadores
 
+// valores literais
+console.log(7 + 3);
+console.log(6 - 7);
+console.log(7 * 9);
+console.log(8 / 3);
+console.log(8 % 3);
+
+let a = 8;
+let b = 11;
+
+// usando variáveis
+console.log(a + b);
+console.log(a - b);
+console.log(a * b);
+console.log(a / b);
+console.log(a % b);
+
+a = a + b * a / b;
+console.log(a);
+
+// Atribuição
+
+let y = 20;
+y += 10; // y = y + 10;
+y -= 2; // y = y - 2;
+y *= 2; // y = y * 2;
+y /= 4; // y = y / 4;
+y %= 3; // y = y % 3;
+
+// Texto
+
+let w = 'texto';
+w += ', mais texto';
+w += '!!!';
+
+
+// Lógicos
+
+let resultadoE = '#1 (AND) - Vai pro shopping? ';
+resultadoE += temDinheiro && estaEnsolarado;
+console.log(resultadoE);
+
+let resultadoOU = '#2 (OR) - Vai pro shopping? ';
+resultadoOU += estaEnsolarado || carroEstaNaGaragem;
+console.log(resultadoOU);
+
+console.log(true !== true);
+console.log(true !== false);
+console.log(false !== true);
+console.log(false !== false);
+
+console.log('Não verdadeiro: ' + !true);
+console.log('Não falso: ' + !false);
+// ----------------------------------
+let comprarTV50 = t1 && t2; // AND
+console.log('Vamos comprar a TV 50"?', comprarTV50);
+
+let comprarTV32 = t1 !== t2; // XOR
+console.log('Vamos comprar a TV 32"?', comprarTV32);
+
+let tomarSorvete = t1 || t2; // OR
+console.log('Vamos comprar sorvete?', tomarSorvete);
+
+let ficarEmCasa = !tomarSorvete; // NOT
+console.log('Vamos ficar em casa?', ficarEmCasa);
+
+
 // 35. Classificação dos Operadores => Operadors
-// 37. Operadores Aritméticos 
 // 41. Operadores Relacionais - Teoria
+
+// valores literais
+console.log(7 > 9);
+console.log(7 >= 7);
+console.log(8 < 2);
+console.log(8 <= 12);
+console.log(9 == 3);
+console.log(9 != 5);
+// ----------------------------------
+let a = 7;
+let b = 32;
+// usando variáveis
+console.log(a > b);
+console.log(a >= b);
+console.log(a < b);
+console.log(a <= b);
+console.log(a == b);
+console.log(a != b);
+// ----------------------------------
+let a = 1;
+let b = "1";
+let c = "1";
+console.log(a == b);
+console.log(a === b);
+console.log(b === c);
+// ----------------------------------
+console.log(a != b);
+console.log(a !== b);
+console.log(b !== c);
+// ----------------------------------
+
 // 47. Operadores de Atribuição - Teoria
 // 51. Operadores Lógicos - Teoria #01
 // 61. Operadores Unários - Prática #01
-// 64. Operador Ternário - Teoria
-// 
 
+let a = 1;
+
+a = a + 1;
+a += 1;
+a++;
+++a;
+
+a--;
+--a;
+
+console.log(a);
+
+a++;
+console.log(a === b);
+b++;
+
+console.log(!!true);
+console.log(!!false);
+
+console.log(!!'Texto!');
+console.log(!!"");
+
+console.log(!!1);
+console.log(!!0);
+console.log(!!-1);
+console.log(!!-0.00001);
+
+// 64. Operador Ternário - Teoria
+
+const hora = 23;
+const saudacao = hora <= 11 ? 'Bom dia' : 'Boa tarde';
+console.log(saudacao);
+
+const hora = 11;
+const saudacao = hora <= 11 ? "Bom dia" : (hora <= 17 ? "Boa tarde" : "Boa noite");
+console.log(saudacao);
 
 // 43. Tipagem Fraca vs Tipagem Forte
+
+// ??????
 
 /*------------------------------------------------------------------------------*/
 
