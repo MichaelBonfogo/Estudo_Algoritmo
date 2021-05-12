@@ -218,6 +218,7 @@ console.log(saudacao);
 
 // 71. If - Teoria
 
+
 // 79. If/Else - Teoria
 
 // 87. Laços de Repetição - Teoria
@@ -292,6 +293,17 @@ exibirHoraAtual();
 // Seção 7: Arrays
 
 // 128. Array Teoria
+
+var array_name = [item1, item2, ...];  
+ex:
+var cars = ["Saab", "Volvo", "BMW"];
+
+Acesse os elementos de um array
+Você acessa um elemento da matriz referindo-se ao número do índice .
+
+Esta instrução acessa o valor do primeiro elemento em cars:
+
+var name = cars[0];
 
 //              0    1   2    3    4    5
 const notas = [7.8, 6.7, 10, 9.5, 7.8, 5.8];
