@@ -34,14 +34,11 @@ Visão Geral das Estruturas de Controle
 Opções de operadores aritméticos
 
 A tabela abaixo apresenta os operadores aritméticos da linguagem Java:
+
 + operador de adição
-
 - operador subtração
-
 * operador de multiplicação
-
 / operador de divisão
-
 % operador de módulo (ou resto da divisão)
 
 -------------------------------------------------------------------------------
@@ -50,7 +47,6 @@ Opções de operadores de igualdade
 A tabela abaixo apresenta os operadores de igualdade do Java:
 
 == Utilizado quando desejamos verificar se uma variável é igual a outra.
-
 != Utilizado quando desejamos verificar se uma variável é diferente de outra.
 
 -------------------------------------------------------------------------------
@@ -60,11 +56,8 @@ Opções de operadores relacionais
 A tabela abaixo apresenta os operadores relacionais do Java:
 
 > Utilizado quando desejamos verificar se uma variável é maior que outra.
-
 >= Utilizado quando desejamos verificar se uma variável é maior ou igual a outra
-
 < Utilizado quando desejamos verificar se uma variável é menor que outra.
-
 <= Utilizado quando desejamos verificar se uma variável é menor ou igual a outra.
 
 -------------------------------------------------------------------------------
@@ -74,7 +67,6 @@ Opções de operadores de lógicos
 A tabela abaixo apresenta os operadores lógicos do Java:
 
 && Utilizado quando desejamos que as duas expressões sejam verdadeiras.
-
 || Utilizado quando precisamos que pelo meno um das expressões seja verdadeira.
 
 -------------------------------------------------------------------------------
