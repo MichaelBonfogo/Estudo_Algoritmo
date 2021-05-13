@@ -225,11 +225,78 @@ console.log(saudacao);
 
 // 88. While - Prática #01
 
+while (true) {
+    console.log('Laço infinito!!!');
+}
+
+console.log('Fim!');
+
+// ----------------
+
+let controle = 1;
+
+while (controle <= 10) {
+    console.log(controle);
+    controle++;
+}
+
+console.log('Fim!');
+
+// declaração, expressão e incremento -> Qtde determinada!
+
 // 92. For - Prática #01
+
+for (let controle = 1; controle <= 10; controle++) {
+    console.log(controle);
+}
+
+console.log('Fim!');
+
+
+// ----------------
+
+for(let i = 7; i >= 3; i--) {
+    console.log(i);
+}
+
+console.log('Fim!');
 
 // 100. Switch
 
+const conceito = 'C+';
+
+switch(conceito) {
+    case 'A+': console.log(10); break;
+    case 'A': console.log(9); break;
+    case 'B+': console.log(8); break;
+    case 'B': console.log(7); break;
+    case 'C+': console.log(6); break;
+    case 'C': console.log(5); break;
+    case 'D+': console.log(4); break;
+    case 'D': console.log(3); break;
+    case 'E+': console.log(2); break;
+    case 'E': console.log(1); break;
+    case 'F': console.log(0); break;
+    default: console.log('Conceito inválido!');
+}
+
 // 103. Break Continue
+
+// break
+for(let i = 1; i <= 5; i++) {
+    if(i === 3) {
+        break;
+    }
+    console.log(i);
+}
+
+// continue
+for(let i = 1; i <= 5; i++) {
+    if(i === 3) {
+        continue;
+    }
+    console.log(i);
+}
 
 /*------------------------------------------------------------------------------*/
 
