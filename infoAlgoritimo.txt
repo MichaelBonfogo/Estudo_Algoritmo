@@ -104,14 +104,60 @@ senao {
 }
 
 -------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 for:
 
+for (let controle = 1; controle <= 10; controle++) {
+    console.log(controle);
+}
 
+console.log('Fim!');
 
+--------------------------------
 
+// for(;;) {
+// }
+
+// for(; true; ) {
+// }
+
+let controle = 1;
+
+for (; controle <= 10;) {
+    console.log(controle);
+    controle++;
+}
+
+console.log('Fim!');
+
+--------------------------------
+
+// 7, 6, 5, 4, 3
+
+for(let i = 7; i >= 3; i--) {
+    console.log(i);
+}
+
+console.log('Fim!');
+
+--------------------------------
+
+// [1, 1] [1, 2] [1, 3]
+// [2, 1] [2, 2] [2, 3]
+// [3, 1] [3, 2] [3, 3]
+
+for(let i = 1; i <= 3; i++) {
+    let linha = '';
+    for(let j = 1; j <= 3; j++) {
+        linha += `[${i}, ${j}] `;
+    }
+    console.log(linha);
+}
 
 -------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+
 
 while:
 
@@ -143,6 +189,8 @@ faca {
 } enquanto (numero != 0)
 
 -------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+
 
 switch:
 
@@ -191,6 +239,116 @@ nomeFuncao;  -- chamada
 
 ARRAYS:
 
+//              0    1   2    3    4    5
+const notas = [7.8, 6.7, 10, 9.5, 7.8, 5.8];
+
+console.log(notas);
+console.log(notas[3]);
+console.log(notas[5]);
+console.log(notas[10]);
+
+notas[4] = 8.7;
+
+console.log(notas);
+
+---------------------------------
+
+const nomes = [];
+
+nomes[0] = "Pedro";
+nomes[1] = "Ana";
+nomes[2] = "Bia";
+nomes[3] = "Gui";
+nomes[4] = "Rebeca";
+nomes[9] = "Tiago";
+
+console.log(nomes);
+
+
+---------------------------------
+
+console.log(typeof console);
+console.log(typeof console.log);
+
+const numeros = [1, 2, 3];
+
+console.log(typeof numeros);
+
+numeros.push(4);
+numeros.push(5);
+numeros.push(10.98);
+
+console.log(numeros);
+console.log(numeros.length);
+
+--------------------------------
+
+const numeros = [1, 2, 356, 4, 5, 6, 11, 45];
+
+for(let i = 0; i < numeros.length; i++) {
+    console.log(numeros[i]);
+}
+
+for(let i = 1; i < numeros.length; i += 2) {
+    console.log(numeros[i]);
+}
+
+
+---------------------------------
+
+Metodos:
+
+const numeros = [1, 2, 3, 4, 5, 8];
+
+numeros[0] = 100;
+numeros.push(6);
+
+console.log(numeros.indexOf(4));
+console.log(numeros.indexOf(4, 4));
+console.log(numeros.includes(10));
+console.log(numeros.includes(6));
+console.log(numeros.join(' - '));
+console.log(numeros);
+
+const numeros2 = numeros.concat(7, 8, 9);
+console.log(numeros2);
+
+-----------------------------------
+
+const numeros = [1, 2, 3, 4, 5, 8];
+
+numeros.splice(1, 2);
+console.log(numeros);
+
+console.log(numeros.pop());
+console.log(numeros.pop());
+console.log(numeros);
+
+-----------------------------------
+
+const numeros = [10, 20, 30, 40];
+
+function praCadaElemento(elemento, indice, array) {
+    console.log(elemento, indice, array);
+}
+
+numeros.forEach(praCadaElemento);
+
+numeros.forEach(function (el) {
+    console.log(el);
+});
+
+numeros.forEach(function (_, i) {
+    console.log(i);
+});
+
+// for(let n of numeros) {
+//     console.log(n);
+// }
+
+// for (let i = 0; i < numeros.length; i++) {
+//     console.log(numeros[i]);
+// }
 
 
 -------------------------------------------------------------------------------
