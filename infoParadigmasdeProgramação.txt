@@ -1,0 +1,45 @@
+Paradigmas de Programação
+
+Paradigmas de Programação: Varias maneiras de resolver o mesmo problema.
+
+Existem 2 Paradigmas de Programação:
+ Imperativo: Passo a Passo.
+ Declarativo: Fazer algo sem saber como é feito.
+
+Imperativo - descrição Passo a Passo.
+ Imperativo: um comando de cada vez.
+
+ Procedural: com funções, métodos, reaproveitamento de código.
+
+ Estruturada: utilizando condicional, loop, breack, continue ( mais recomendado para sistemas pequenos ).
+
+ Orientado a Objeto: trazer o mundo real para a programação -> classes, herança, polimorismo, encapslumaneto ( recomendado para maior parte dos sistemas principalmente sistemas grandes ).
+
+Declarativo: fazer algo sem saber com é realizado internamente.
+ Funcional: antiga, muito matemática, sem loop, sem For, utiliza método recurssivo, variáveis imutáveis => Mais Rápida.
+
+ Lógica: Utilizada IA, SQL, HTML...
+
+----------------------------------------------------------------
+----------------------------------------------------------------
+----------------------------------------------------------------
+
+Paradigmas de Programação
+
+Paradigma:
+ Modelo ou Padrão a Seguir
+
+Linguagem: Algumas linguagens são nativamente estruturada em algum Paradigma. Ex: Java -> OO.
+
+Aprendizado => Nova Linguagem vs Novo Paradigma
+
+Padrões Projeto => Padrões Arquiteturais => Pardigma
+
+----------------------------------------------------------------
+
+Paradigmas:
+
+Funcional 1957 - Procedural 1968 - Orientado a Objeto 80/90
+
+----------------------------------------------------------------
+
