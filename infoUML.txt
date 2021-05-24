@@ -1,0 +1,65 @@
+UML
+
+O que é UML e Diagramas de Caso de Uso: Introdução Prática à UML
+
+UML é um acrônimo para a expressão Unified Modeling Language. Pela definição de seu nome, vemos que a UML é uma linguagem que define uma série de artefatos que nos ajuda na tarefa de modelar e documentar os sistemas orientados a objetos que desenvolvemos.
+
+Ela possui nove tipos de diagramas que são usados para documentar e modelar diversos aspectos dos sistemas.
+
+A maioria dos problemas encontrados em sistemas orientados a objetos tem sua origem na construção do modelo, no desenho do sistema. Muitas vezes as empresas e profissionais não dão muita ênfase à essa fase do projeto, e acabam cometendo diversos erros de análise e modelagem. Isso quando há modelagem, pois nós profissionais da área sabemos que muitas vezes o projeto começa já na fase de codificação.
+
+Diagrama de Casos de Uso
+Esse diagrama documenta o que o sistema faz do ponto de vista do usuário. Em outras palavras, ele descreve as principais funcionalidades do sistema e a interação dessas funcionalidades com os usuários do mesmo sistema. Nesse diagrama não nos aprofundamos em detalhes técnicos que dizem como o sistema faz.
+
+Este artefato é comumente derivado da especificação de requisitos, que por sua vez não faz parte da UML. Pode ser utilizado também para criar o documento de requisitos.
+
+Diagramas de Casos de Uso são compostos basicamente por quatro partes:
+
+Cenário: Sequência de eventos que acontecem quando um usuário interage com o sistema.
+Ator: Usuário do sistema, ou melhor, um tipo de usuário.
+Use Case: É uma tarefa ou uma funcionalidade realizada pelo ator (usuário)
+Comunicação: é o que liga um ator com um caso de uso
+Vamos criar um cenário de exemplo para vermos a notação de um diagrama de caso de uso:
+
+“A clínica médica Saúde Perfeita precisa de um sistema de agendamento de consultas e exames. Um paciente entra em contato com a clínica para marcar consultas visando realizar um check-up anual com seu médico de preferência. A recepcionista procura data e hora disponível mais próxima na agenda do médico e marca as consultas. Posteriormente o paciente realiza a consulta, e nela o médico pode prescrever medicações e exames, caso necessário”.
+
+Com esse cenário simples podemos começar a criar nosso diagrama. Inicialmente vamos definir nossos atores:
+
+Paciente
+Secretária
+Médico
+Agora vamos definir algumas ações de cada usuário:
+
+Paciente
+Solicita Consulta
+Solicita Cancelamento de Consulta
+Secretária
+Consulta Agenda
+Marca Consulta
+Cancela Consulta
+Médico
+Realiza Consulta
+Prescreve Medicação
+Solicita Realização de exames
+Bom, agora já temos uma relação de atores e ações relacionadas a esses atores. Poderíamos criar um documento textual (como foi feito acima), para registrar nossos atores e funcionalidades. Mas o leitor não concorda que uma imagem vale mais que mil palavras? Pois bem, podemos expressar tudo o que definimos em um desenho simples utilizando os padrões da UML para documentação de casos de uso.
+
+No mercado existem diversos tipos de ferramentas case que auxiliam na construção de diagramas. o leitor fique a vontade de utilizar a ferramenta de sua preferencia. Algumas sugestões seriam as versões trial do Enterprise Architect, ou do Visio.
+
+Podemos agora construir o diagrama:
+
+Como podemos observar esse diagrama composto por desenhos simples descrevem de maneira bem objetiva o que textualmente poderia ficar extenso. Nele vemos as funcionalidades do sistema e as interações dos usuários com elas.
+
+Para melhorar um pouco mais esse diagrama vamos ver o conceito de <>. Include e extend são relações entre os casos de uso.
+
+Include: seria a relação de um caso de uso que para ter sua funcionalidade executada precisa chamar outro caso de uso.
+Extend: Esta relação significa que o caso de uso extendido vai funcionar exatamente como o caso de uso base só que alguns passos novos inseridos no caso de uso extendido.
+Tanto um como o outro, são notados como setas tracejadas com o texto <> ou <>.
+
+Sabendo disso podemos modificar o diagrama inserindo um novo caso de uso “Consultar Agenda”, que será utilizado no caso de uso “Marca Consulta”. Pois a secretária, antes de marcar precisa verificar a disponibilidade da agenda do médico certo?
+
+O leitor não concorda que esse tipo de diagrama é extremamente simples e útil? Com ele podemos trabalhar em três áreas muito importantes nos projetos:
+
+Definição de Requisitos - Novos casos de usos geralmente geram novos requisitos conforme o sistema vai sendo analisado e modelado;
+Comunicação com os Clientes - Pela sua simplicidade, sua compreensão não exige conhecimentos técnicos, portanto o cliente pode entender muito bem esse diagrama, que auxilia o pessoal técnico na comunicação com clientes;
+Geração de Casos de Teste - A junção de todos os cenários para um caso de uso pode sugerir uma bateria de testes para cada cenário.
+Com isso chegamos ao fim desta parte do nosso artigo. Espero que tenham gostado. Por favos peço que deixem seus comentários para que possamos melhorar a qualidade de nossos artigos.
